@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Fresco - IIT Indore Campus Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>🛒 La Fresco</h1>
+  <div class="header-right">
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search products...">
+    </div>
+    <div class="cart-area">
+      <div class="cart-icon">
+        🧺 <span id="cart-count">0</span>
+      </div>
+      <button id="toggle-mode" title="Toggle Dark/Light Mode">🌙</button>
+    </div>
+  </div>
+</header>
+
+  <nav>
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="Snacks">Snacks</button>
+    <button class="filter-btn" data-category="Stationery">Stationery</button>
+    <button class="filter-btn" data-category="Beverages">Beverages</button>
+    <button class="filter-btn" data-category="Toiletries">Toiletries</button>
+    <button class="filter-btn" data-category="Ice-Cream">Ice-Cream</button>
+  </nav>
+
+  <main id="product-grid"></main>
+
+  <aside id="cart-panel" >
+    <button id="close-cart">⬅ Back to Shop</button>
+    <h2>🧾 Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: ₹0</p>
+    <button id="clear-cart">Clear Cart</button>
+    <button id="checkout">Mock Checkout</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
