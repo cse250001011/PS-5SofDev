@@ -37,7 +37,6 @@ function displayProducts(list) {
   });
 }
 
-// Initial product load
 displayProducts(products);
 
 function addToCart(product) {
@@ -45,8 +44,8 @@ function addToCart(product) {
   if (existing) existing.qty++;
   else cart.push({ ...product, qty: 1 });
   updateCart();
-  openCart();
 }
+
 
 function updateCart() {
   cartItems.innerHTML = "";
